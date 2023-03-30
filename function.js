@@ -1,0 +1,9 @@
+function add1()
+{
+    let a=10;
+    let b=10;
+    let c=a+b;
+    console.log(c);
+}
+add1();
+var data=
