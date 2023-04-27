@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>FIRST NAME</label>
+    <input type=text id="name1">
+    <label>LAST NAME</label>
+    <input type="text" id="name2">
+    <button onclick="checkname()">validate</button>
+
+
+
+    <script>
+         function checkname(){
+      var a=document.getElementById("name1").value;
+      var b=document.getElementById("name2").value;
+      var fnpattern=/^[A-Z]{1}[A-z]{1,10}$/;
+      var lnpattern=/^[A-Z]{1}$/;
+    
+      
+     
+      if(fnpattern.test(a)&&lnpattern.test(b)){
+        alert("valid name");
+      }
+      else{
+        alert("invalid name");
+      }
+    }
+
+    </script>
+</body>
+</html>
