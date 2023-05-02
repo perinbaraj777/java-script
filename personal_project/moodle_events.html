@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="moodle_events.js"></script>
+</head>
+<body>
+    <!-- Get an input from the user and display it in pop-up when the user hit the display button -->
+<!--  
+<input type="text" id="inp1">
+<button onclick="disp()">display</button> -->
+
+
+<!-- Get two inputs from the user and compare whether it is equal or not. If it is equal then it should pop-up "Data's are equal" message. 
+ -->
+<!-- <input type="number" id="inp1">
+<input type="number" id="inp2">
+<p id="add"></p>
+<p id="sub"></p>
+<p id="mul"></p>
+<p id="div"></p>
+<p id="mod"></p>
+<button onclick="check()">check</button>
+
+
+ -->
+
+ <!-- Get input from the user where it should accept only the integer. Display the values in a select box using mouse event.
+ -->
+ <!-- <input type="number" id="inp1">
+ <select id="value">
+
+ </select>
+<button onclick="disp()">display</button> -->
+
+
+
+
+
+
+<!-- Get input from the user where it should accept only the integer. Display the values in a select box using keyboard event. -->
+<!-- <input type="number" id ="inp1" onkeyup="key()">
+<select id="value">
+
+</select> -->
+
+
+
+
+
+<!-- Get an input from the user, display the values in a drop-down. 
+  Select a specific value where it should list-down all the previous values using Inner HTML. -->
+  <!-- <input type="number" onkeyup="disp1()" id="inp1">
+  <select id="value" onchange="disp2()"></select>
+  <select id="value2" ></select>
+   -->
+
+
+
+
+
+
+   <!-- Get an input from the user, display the values in a drop-down. Select a specific value and the equvalent
+     form should be created along with two values "Username" and "Password" with empty values where user will fill out the data. -->
+     <!-- <input type="number" id="inp">
+     <button onclick="add()">add</button>
+     <select id="sel" onchange="input()"></select>
+     <p id="para"></p>
+ -->
+
+
+
+
+
+     <!-- Get name, dob from user. Take the first four letter from the name and concat the birth date then it 
+      should be act as an input to the password field.  -->
+      <!-- <input type="text" placeholder="username" id="nam">
+      <input type="date" id="date"><br><br>
+      <button onclick="pass()">generate password</button>
+     <label>PASSWORD</label><input type="text" id="ps"> -->
+
+
+
+
+
+
+
+     <!-- create to javascript function to get date from user and used to display date with +5 days and -5days 
+      from the getting date and display either in input box  -->
+
+     <!-- DATE<input type="date" id="dat"><br>
+     <button onclick="add()">after 5 day</button>
+     <button onclick="sub()">before 5 day</button><br>
+     <p id="inp1"></p> -->
+   
+
+
+
+
+
+
+
+
+     <!-- create to javascript function to get date from user and used to display date with +5 days and -5days
+         from the getting date and display either in input box  -->
+
+         
+  <script>
+//     1. Create a variable and print "Hello JavaScript" in alert box.
+
+// 2. Get an input from prompt box and display it in the alert box.
+
+// var a="hello javascript";
+//  alert(a);
+//  var b=prompt();
+//  alert(b);
+
+
+
+// Get an input from user using prompt box and validate using switch case
+// var a=parseInt(prompt());
+// switch (a){
+//     case 1:
+//         alert("monday");
+//         break;
+//         case 2:
+//             alert("tuesday");
+//             break;
+//             case 3:
+//                 alert("wednesday");
+//                 break;
+//                 case 4:
+//                     alert("thursday");
+//                     break;
+//                     case 5:
+//                         alert("friday");
+//                         break;
+//                         case 6:
+//                             alert("saturday");
+//                             break;
+//             default:
+//                 alert("invalid");
+// }
+   
+
+
+
+// Get an input from the user and display it in pop-up when the user hit the display button
+// function disp(){
+//     var a=document.getElementById("inp1").value;
+//     alert(a);
+// }
+
+
+
+
+
+// Get two inputs from the user and compare whether it is equal or not. If it is equal then it should pop-up "Data's are equal" message. 
+
+// var a=document.getElementById("inp1").value;
+// var b=document.getElementById("inp2").value;
+// function check(){
+// if(a==b){
+//     alert("data s are equal");
+// }
+// else{
+//     alert("data s are unequal");
+// }
+// }
+
+
+
+
+
+
+
+// Get two inputs from the user and validate it using a button whether any one of the input contains any null value or not. If it contains null then pop-up a message stating that "One of your data is empty, kindly fill it and try againsmile"
+// function check(){
+// var a=document.getElementById("inp1").value;
+// var b=document.getElementById("inp2").value;
+
+// if(a!=" " && b!=" " && a&&b){
+// alert("your data is correct");
+// }
+
+// else{
+//   alert("one of your data is empty kindly fill it and try again data is correct");
+// }
+// }
+
+
+
+
+
+
+// Get two inputs from the user and perform all Arithmetic operation. Display each one of the ouput using Inner HTML.
+// function check(){
+// var a=parseInt(document.getElementById("inp1").value);
+// var b=parseInt(document.getElementById("inp2").value);
+// document.getElementById("add").innerHTML=a+b;
+// document.getElementById("sub").innerHTML=a-b;
+// document.getElementById("mul").innerHTML=a*b;
+// document.getElementById("div").innerHTML=a/b;
+// document.getElementById("mod").innerHTML=a%b;
+// }
+
+
+
+
+// Get input from the user where it should accept only the integer. Display the values in a select box using mouse event.
+// function disp(){
+//   var inp=document.getElementById("inp1").value;
+// var out="<option>select</option>";
+// for(i=0;i<inp;i++){
+//   out+="<option>"+i+"</option>"
+// }
+// document.getElementById("value").innerHTML=out;
+
+
+// }
+
+
+
+
+
+
+// Get input from the user where it should accept only the integer. Display the values in a select box using keyboard event.
+// function key(){
+//   var a=document.getElementById("inp1").value;
+ 
+// var out="<option>select</option>";
+//   for(i=0;i<a;i++){
+//      out+="<option>"+i+"</option>";
+//   }
+//   document.getElementById("value").innerHTML=out;
+// }
+
+
+
+
+
+
+
+// Get an input from the user, display the values in a drop-down. 
+// Select a specific value where it should list-down all the previous values using Inner HTML.
+// function disp1(){
+//   var a=document.getElementById("inp1").value;
+//   var out="<option>select</option>";
+//   for(i=0;i<a;i++){
+//     out+="<option>"+i+"</option>";
+//   }
+//   document.getElementById("value").innerHTML=out;
+
+// }
+// function disp2(){
+//   var c=document.getElementById("value").value;
+//   var out2="<option>select</option>";
+//   for(i=0;i<c;i++){
+//     out2+="<option>"+i+"</option>";
+//   }
+//   document.getElementById("value2").innerHTML=out2
+// }
+
+
+
+
+
+
+
+
+// Get an input from the user, display the values in a drop-down. Select a specific value and the equvalent form should be created along with two 
+// values "Username" and "Password" with empty values where user will fill out the data.
+// var a =document.getElementById("inp1").value;
+// function add(){
+//     var a=document.getElementById("inp").value;
+//     var b="";
+//    for(i=0;i<a;i++){
+//     b+="<option>"+i+"</option>"
+//    }
+//    document.getElementById("sel").innerHTML=b
+//  }
+//  function input(){
+//     var c="USERNAME<input>";
+//     var d="PASSWORD<input>";
+//     document.getElementById("para").innerHTML=c+d;
+
+//  }
+
+
+
+
+
+//  Get name, dob from user. Take the first four letter from the name and 
+// concat the birth date then it should be act as an input to the password field. 
+// var pass=()=>{
+//    let a=document.getElementById("nam").value;
+//    let b=a.slice(0,4);
+//    let c=document.getElementById("date").value;
+//   let d=document.getElementById("ps").value=b+c;
+// }
+
+
+
+
+
+
+
+
+// create to javascript function to get date from user and used to display date with +5 days and -5days from the getting date 
+// and display either in input box 
+// function add(){
+//   var a=new Date(document.getElementById("dat").value);
+//   a.setDate(a.getDate()+5);
+//   document.getElementById("inp1").innerHTML=a;
+// }
+// function sub(){
+//    var a=new Date(document.getElementById("dat").value);
+//   a.setDate(a.getDate()-5);
+//   document.getElementById("inp1").innerHTML=a;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// create to javascript function to get date from user and used to display date with +5 days and -5days
+//  from the getting date and display either in input box 
+
+
+</script>
+
+
+    
+ </body>
+ </html>
